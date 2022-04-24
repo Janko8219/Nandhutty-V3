@@ -6,17 +6,17 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
-  〔 ɴᴀɴᴅʜᴜᴛᴛʏ ᴠ3 〕
-➪Hai, %name!
-➪Uptime: *%uptime (%muptime)*
-➪Developer:ᴀᴊᴍᴀʟ ᴀɴᴅ ᴀᴄʜᴜ
+  〔 ᴀᴍᴇʟɪᴀ  〕
+📍ʜᴇʟʟᴏ, %name!
+📍ᴜᴩᴛɪᴍᴇ: *%uptime (%muptime)*
+📍ᴅᴇᴠᴇʟᴏᴩᴇʀ:ᴍᴜɴᴀᴠɪʀ
 %readmore`.trimStart(),
   header: '*[ %category ]*',
   body: '✰ %cmd %islimit %isPremium',
   footer: '\n*[ ᴍᴏʀᴇ ғᴇᴀᴛᴜʀᴇs ᴄᴏᴍᴍɪɴɢ sᴏᴏɴ ]*\n',
   after: `
-*ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ🦄*
-*ʜᴏᴘᴇ ʏᴏᴜ ᴀʀᴇ ᴇɴᴊᴏʏɪɴɢ🦄*
+*ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ📍*
+*ʜᴏᴘᴇ ʏᴏᴜ ᴀʀᴇ ᴇɴᴊᴏʏɪɴɢ📍*
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
@@ -175,10 +175,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `      🔮 ɴᴀɴᴅʜᴜᴛᴛʏ ᴠ3 🔮\n\╭─❑\n\│✅ Version: v3 \n\│✅ Library: Baileys\n\│✅ Runtime: ${uptime} \n\╰❑\n\╭─⭐ 「 INFO USER 」\n\│ 👤 Name: ${name} \n\│ 🔍 Total Features : 100+\n\│ ⚠️ Limit: ${limit} \n\│ 🗓️ Date: ${date} \n\│ 🔰 Exp: ${exp} \n\│ 💎 Level: ${level} \n\│ 🔮 Role: ${role} \n\│ 📟 Storage: 106/128 Gb \n\╰⭐\n\╭─ ❑「 INFORMATION 」❑──\n\│ This bot is still in testing stage\n\│ if there is a bug \ error please\n\│ report it to the owner\n\│\n\╰❑`.trim(),
+          "title": `      🍀 ᴀᴍᴇʟɪᴀ 🍀\n\╭─❑\n\│📍 ᴠᴇʀꜱɪᴏɴ: v1 \n\│📍 ʟɪʙʀᴀʀy: ʙᴀɪʟᴇyꜱ\n\│📍 ʀᴜɴᴛɪᴍᴇ: ${uptime} \n\╰❑\n\╭─📍 「 INFO USER 」\n\│ 📍 ɴᴀᴍᴇ: ${name} \n\│ │ 📍 ʟɪᴍɪᴛ: ${limit} \n\│ 📍 ᴅᴀᴛᴇ: ${date} \n\│ 📍ᴇxᴩ: ${exp} \n\│ 📍 ʟᴇᴠᴇʟ: ${level} \n\│ 📍 ʀᴏʟᴇ: ${role} \n\│ 📍 ꜱᴛᴏʀᴀɢᴇ: 106/128 Gb \n\╰📍\n\╭─ ❑「 INFORMATION 」❑──\n\│ This bot is still in testing stage\n\│ if there is a bug \ error please\n\│ report it to the owner\n\│\n\╰❑`.trim(),
           "description": "ᴅᴏɴᴛ sᴘᴀᴍ",
           "buttonText": "Click Here",
-          "footerText": "ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ ᴀᴊᴍᴀʟ-ᴀᴄʜᴜ",
+          "footerText": "ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ ᴍᴜɴᴀᴠɪʀ",
           "listType": "SINGLE_SELECT",
           "sections": [
             {
@@ -365,7 +365,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'ᴍᴀᴅᴇ ᴡɪᴛʜ ❤️ ʙʏ ᴀᴊᴍᴀʟ', 'ᴡʜᴏ ɪs ᴛʜᴇ ᴏᴡɴᴇʀ😯', `${_p}owner`, 'ɢɪᴛ', `${_p}git`, m)
+    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'ᴍᴀᴅᴇ ᴡɪᴛʜ ❤️ ʙʏ ᴍᴜɴᴀᴠɪʀ', 'ᴡʜᴏ ɪs ᴛʜᴇ ᴏᴡɴᴇʀ😯', `${_p}owner`, 'ɢɪᴛ', `${_p}git`, m)
   } catch (e) {
     conn.reply(m.chat, 'Sorry,The bot is not responding', m)
     throw e
